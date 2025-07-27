@@ -9,7 +9,7 @@ import Services from "@/pages/services";
 import Partners from "@/pages/partners";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
-import "@/styles/globals.css";
+
 
 const queryClient = new QueryClient();
 
