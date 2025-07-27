@@ -1,0 +1,150 @@
+.header {
+  background-color: var(--he-white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .nav {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    padding: 0 2rem;
+  }
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--he-primary);
+}
+
+.logoSubtext {
+  font-size: 0.75rem;
+  color: var(--he-secondary);
+  margin-top: -0.25rem;
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: block;
+  }
+}
+
+.navLinks {
+  margin-left: 2.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--he-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding-bottom: 0.25rem;
+}
+
+.navLink:hover {
+  color: var(--he-primary);
+}
+
+.navLinkActive {
+  color: var(--he-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--he-primary);
+}
+
+.mobileMenuButton {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.menuButton {
+  color: var(--he-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  color: var(--he-primary);
+  outline: none;
+}
+
+.mobileNav {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNavOpen {
+  max-height: 300px;
+}
+
+.mobileNavContent {
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  background-color: var(--he-white);
+  border-top: 1px solid var(--he-gray-300);
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 0.75rem;
+  color: var(--he-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  color: var(--he-primary);
+}
+
+.mobileNavLinkActive {
+  color: var(--he-primary);
+  font-weight: 600;
+}

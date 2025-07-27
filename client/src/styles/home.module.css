@@ -1,0 +1,388 @@
+.container {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom right, var(--he-primary), var(--he-blue-800));
+  color: white;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroContent {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .heroContent {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContent {
+    padding: 8rem 2rem;
+  }
+}
+
+.heroGrid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.heroText {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .heroText {
+    margin-bottom: 0;
+  }
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.heroAccent {
+  color: var(--he-accent);
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--he-blue-100);
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .heroDescription {
+    font-size: 1.5rem;
+  }
+}
+
+.heroButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .heroButtons {
+    flex-direction: row;
+  }
+}
+
+.primaryButton {
+  background-color: var(--he-accent);
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.primaryButton:hover {
+  background-color: hsl(43, 96%, 46%);
+  transform: scale(1.05);
+}
+
+.secondaryButton {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: var(--he-primary);
+}
+
+.heroFeatures {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .heroFeatures {
+    display: block;
+  }
+}
+
+.featuresCard {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.featuresContent {
+  padding: 2rem;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.featureIcon {
+  border-radius: 9999px;
+  padding: 0.75rem;
+  color: white;
+}
+
+.featureText {
+  font-size: 1.125rem;
+}
+
+/* About Preview Section */
+.aboutPreview {
+  padding: 5rem 0;
+  background-color: var(--he-white);
+}
+
+.sectionContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .sectionContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionContainer {
+    padding: 0 2rem;
+  }
+}
+
+.aboutGrid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.aboutText {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .aboutText {
+    margin-bottom: 0;
+  }
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--he-primary);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
+
+.sectionDescription {
+  font-size: 1.125rem;
+  color: var(--he-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--he-primary);
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  color: var(--he-secondary);
+}
+
+.learnMoreButton {
+  border: 1px solid var(--he-primary);
+  color: var(--he-primary);
+  background: transparent;
+}
+
+.learnMoreButton:hover {
+  background-color: var(--he-primary);
+  color: white;
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.image {
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: auto;
+}
+
+.badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background-color: var(--he-accent);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.badgeText {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.badgeSubtext {
+  font-size: 0.875rem;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 0;
+  background-color: var(--he-background);
+}
+
+.servicesHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.servicesGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.serviceCard {
+  background-color: var(--he-white);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  border: 1px solid var(--he-gray-100);
+}
+
+.serviceCard:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.5rem);
+}
+
+.serviceContent {
+  padding: 2rem;
+}
+
+.serviceImage {
+  margin-bottom: 1.5rem;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--he-primary);
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  color: var(--he-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.servicesFooter {
+  text-align: center;
+}
+
+.viewAllButton {
+  background-color: var(--he-primary);
+  color: white;
+  font-weight: 600;
+}
+
+.viewAllButton:hover {
+  background-color: var(--he-blue-800);
+}

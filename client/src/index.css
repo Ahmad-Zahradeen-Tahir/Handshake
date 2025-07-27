@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(248, 50%, 98%);
+  --foreground: hsl(30, 15%, 9%);
+  --muted: hsl(210, 40%, 95%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(30, 15%, 9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(30, 15%, 9%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(210, 40%, 95%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Handshake Engineering */
+  --he-primary: hsl(217, 91%, 60%);
+  --he-secondary: hsl(215, 16%, 47%);
+  --he-accent: hsl(43, 96%, 56%);
+  --he-background: hsl(248, 50%, 98%);
+  --he-text-primary: hsl(222, 84%, 5%);
+  --he-success: hsl(142, 76%, 36%);
+  --he-white: hsl(0, 0%, 100%);
+  --he-blue-700: hsl(217, 91%, 45%);
+  --he-blue-800: hsl(217, 91%, 35%);
+  --he-blue-100: hsl(214, 100%, 92%);
+  --he-blue-200: hsl(214, 95%, 85%);
+  --he-gray-50: hsl(210, 40%, 98%);
+  --he-gray-100: hsl(210, 40%, 95%);
+  --he-gray-300: hsl(214, 32%, 91%);
+  --he-red-600: hsl(0, 84%, 60%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Global utility classes for Handshake Engineering theme */
+.he-primary { color: var(--he-primary); }
+.he-secondary { color: var(--he-secondary); }
+.he-accent { color: var(--he-accent); }
+.he-text-primary { color: var(--he-text-primary); }
+.he-success { color: var(--he-success); }
+
+.bg-he-primary { background-color: var(--he-primary); }
+.bg-he-secondary { background-color: var(--he-secondary); }
+.bg-he-accent { background-color: var(--he-accent); }
+.bg-he-background { background-color: var(--he-background); }
+.bg-he-white { background-color: var(--he-white); }
+.bg-he-gray-50 { background-color: var(--he-gray-50); }
+.bg-he-blue-700 { background-color: var(--he-blue-700); }
+
+.border-he-primary { border-color: var(--he-primary); }
+.border-he-gray-300 { border-color: var(--he-gray-300); }
+
+.hover\:bg-he-accent:hover { background-color: var(--he-accent); }
+.hover\:bg-he-blue-800:hover { background-color: var(--he-blue-800); }
+.hover\:text-he-primary:hover { color: var(--he-primary); }
+
+.focus\:ring-he-primary:focus { 
+  --tw-ring-color: var(--he-primary);
+}
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');

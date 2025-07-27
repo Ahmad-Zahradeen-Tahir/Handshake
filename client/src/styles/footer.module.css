@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--he-primary);
+  color: white;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.companySection {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  .companySection {
+    grid-column: span 2;
+  }
+}
+
+.companyName {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.companySubname {
+  font-size: 1.125rem;
+  color: var(--he-blue-200);
+  margin-bottom: 1rem;
+}
+
+.companyDescription {
+  color: var(--he-blue-200);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  background-color: var(--he-blue-700);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background-color: var(--he-blue-600);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  color: var(--he-blue-200);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: white;
+}
+
+.serviceItem {
+  color: var(--he-blue-200);
+  cursor: default;
+  transition: color 0.2s ease;
+}
+
+.serviceItem:hover {
+  color: white;
+}
+
+.copyright {
+  border-top: 1px solid var(--he-blue-700);
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--he-blue-200);
+}

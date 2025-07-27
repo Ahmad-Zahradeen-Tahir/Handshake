@@ -1,0 +1,286 @@
+.container {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--he-primary) 0%, var(--he-blue-800) 100%);
+  color: white;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContent {
+    padding: 0 2rem;
+  }
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  color: var(--he-blue-100);
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+  padding: 5rem 0;
+  background-color: var(--he-background);
+}
+
+.sectionContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .sectionContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionContainer {
+    padding: 0 2rem;
+  }
+}
+
+.contactGrid {
+  display: grid;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Contact Information */
+.contactInfo {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .contactInfo {
+    margin-bottom: 0;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contactIcon {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  flex-shrink: 0;
+  color: white;
+}
+
+.contactTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--he-primary);
+  margin-bottom: 0.5rem;
+}
+
+.contactContent {
+  color: var(--he-secondary);
+  font-size: 1.125rem;
+}
+
+.hoursCard {
+  background-color: var(--he-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.hoursContent {
+  padding: 1.5rem;
+}
+
+.hoursTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--he-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hoursList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hoursItem {
+  display: flex;
+  justify-content: space-between;
+  color: var(--he-secondary);
+}
+
+.hoursDay {
+  font-weight: 500;
+}
+
+.hoursTime {
+  color: var(--he-text-primary);
+}
+
+/* Contact Form */
+.formCard {
+  background-color: var(--he-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.formContent {
+  padding: 2rem;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--he-primary);
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--he-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--he-gray-300);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--he-primary);
+  border-color: transparent;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--he-gray-300);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--he-primary);
+  border-color: transparent;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--he-gray-300);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--he-primary);
+  border-color: transparent;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: var(--he-primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--he-blue-800);
+  transform: scale(1.05);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
