@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for Handshake Engineering Limited, an ICT and engineering solutions company based in Nigeria. The application is built with React for the frontend, Express.js for the backend, and uses modern web technologies to create a professional company website with contact functionality.
+This is a static React website for Handshake Engineering Limited, an ICT and engineering solutions company based in Nigeria. The application is built with React, TypeScript, and Tailwind CSS to create a modern, professional company website optimized for easy deployment to GitHub Pages, Vercel, or Netlify.
 
 ## User Preferences
 
@@ -15,21 +15,14 @@ Preferred communication style: Simple, everyday language.
 - **Routing**: Wouter (lightweight React router)
 - **Styling**: Tailwind CSS with custom design system
 - **UI Components**: Radix UI primitives with shadcn/ui component library
-- **State Management**: TanStack Query for server state
+- **State Management**: React hooks for local state
 - **Build Tool**: Vite for fast development and optimized production builds
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js
-- **Language**: TypeScript with ES modules
-- **API Design**: RESTful API endpoints
-- **Data Storage**: In-memory storage with planned PostgreSQL integration
-- **Session Management**: Express sessions with PostgreSQL store setup
-
-### Database Strategy
-- **Current**: In-memory storage using Maps for development
-- **Planned**: PostgreSQL with Drizzle ORM
-- **Migration Tool**: Drizzle Kit for schema management
-- **Connection**: Neon Database serverless PostgreSQL
+### Static Site Architecture
+- **Build Tool**: Vite for fast development and optimized production builds
+- **Deployment**: Configured for Vercel, Netlify, and GitHub Pages
+- **Contact Form**: Static implementation with user notification to call/email directly
+- **Performance**: Optimized for fast loading and SEO
 
 ## Key Components
 
@@ -40,11 +33,11 @@ Preferred communication style: Simple, everyday language.
 - **Forms**: React Hook Form with Zod validation
 - **Responsive Design**: Mobile-first approach with breakpoint utilities
 
-### Backend Services
-- **Contact API**: Handles form submissions with validation
-- **Storage Interface**: Abstracted storage layer supporting different backends
-- **Error Handling**: Centralized error middleware with structured responses
-- **Development Tools**: Hot reloading with Vite integration
+### Static Site Features
+- **Contact Form**: Displays helpful contact information with direct action prompts
+- **Responsive Design**: Mobile-first approach with breakpoint utilities
+- **SEO Optimization**: Proper meta tags and semantic HTML structure
+- **Fast Loading**: Optimized assets and modern build pipeline
 
 ### UI Design System
 - **Theme**: Custom "Handshake Engineering" color palette

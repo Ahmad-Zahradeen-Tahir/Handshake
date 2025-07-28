@@ -6,8 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import styles from "@/styles/contact.module.css";
 
 const Contact = () => {
@@ -48,32 +46,23 @@ const Contact = () => {
     { day: "Sunday", hours: "Closed" }
   ];
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: typeof formData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-      });
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        serviceInterest: "",
-        message: ""
-      });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error Sending Message",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
-    },
-  });
+  const handleFormSubmit = async (data: typeof formData) => {
+    // For static site, we'll show a success message
+    // In a real implementation, you could integrate with services like Netlify Forms, Formspree, or EmailJS
+    toast({
+      title: "Message Received!",
+      description: "Thank you for your interest. Please call us at +234 802 342 3369 or email info@handshakeengineering.com for immediate assistance.",
+    });
+    
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      serviceInterest: "",
+      message: ""
+    });
+  };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -92,7 +81,7 @@ const Contact = () => {
       return;
     }
 
-    contactMutation.mutate(formData);
+    handleFormSubmit(formData);
   };
 
   return (
@@ -228,17 +217,10 @@ const Contact = () => {
                   
                   <Button 
                     type="submit" 
-                    disabled={contactMutation.isPending}
                     className={styles.submitButton}
                   >
-                    {contactMutation.isPending ? (
-                      "Sending..."
-                    ) : (
-                      <>
-                        <Send className="w-4 h-4 mr-2" />
-                        Send Message
-                      </>
-                    )}
+                    <Send className="w-4 h-4 mr-2" />
+                    Send Message
                   </Button>
                 </form>
               </CardContent>
