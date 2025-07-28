@@ -96,6 +96,7 @@
   transition: all 0.3s ease;
   transform: translateY(0);
   border: 1px solid var(--he-gray-100);
+  padding-top: 1rem;
 }
 
 .partnerCard:hover {
@@ -225,6 +226,7 @@
   transition: all 0.3s ease;
   transform: translateY(0);
   border: 1px solid var(--he-gray-100);
+  padding-top: 1rem;
 }
 
 .benefitCard:hover {
@@ -239,7 +241,6 @@
 
 .benefitIcon {
   background-color: var(--he-primary);
-  background-opacity: 0.1;
   width: 4rem;
   height: 4rem;
   border-radius: 0.75rem;
@@ -247,7 +248,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  color: var(--he-primary);
+  color: white;
 }
 
 .benefitTitle {

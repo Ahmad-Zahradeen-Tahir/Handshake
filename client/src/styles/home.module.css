@@ -151,6 +151,9 @@
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
+  padding-top: 1.5rem;
+  width: fit-content;
+  transform: translateX(20rem) translateY(10rem);
 }
 
 .featuresContent {
@@ -346,6 +349,7 @@
   transition: all 0.3s ease;
   transform: translateY(0);
   border: 1px solid var(--he-gray-100);
+  padding-top: 1rem;
 }
 
 .serviceCard:hover {

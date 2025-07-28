@@ -15,14 +15,7 @@ const Footer = () => {
             <p className={styles.companyDescription}>
               Leading provider of ICT, communication systems, energy solutions, and security equipment across Nigeria. Building the future through innovative engineering solutions.
             </p>
-            <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink} aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className={styles.socialLink} aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
+            
           </div>
           
           <div>

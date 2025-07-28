@@ -90,6 +90,7 @@
   transition: all 0.3s ease;
   transform: translateY(0);
   border: 1px solid var(--he-gray-100);
+  padding-top: 1rem;
 }
 
 .serviceCard:hover {
